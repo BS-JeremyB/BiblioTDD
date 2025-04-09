@@ -69,8 +69,8 @@ namespace BiblioTDD.app
             if (_service.HasActiveLoans(bookId))
             {
 
-            }
                 throw new BookDeletionException();
+            }
             try
             {
                 _service.DeleteBook(bookId);
